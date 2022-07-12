@@ -1,0 +1,77 @@
+body{
+    background-color:black;
+    background-image: url("images/schoolbag.jpg");
+    background-attachment: fixed;
+}
+
+h3{
+    text-align: center;
+    color: white;
+    margin: 0.5cm 0 0.1cm 0;
+    font-family: cursive;
+    letter-spacing: 0.1cm;
+    text-decoration: wavy;
+}
+
+ h1{
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    margin-top: 0.1cm;
+    margin-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 0.2cm;
+    text-decoration: underline double 0.05cm purple;
+}
+
+#clear{
+    color: red;
+    background-color: aquamarine;
+}
+
+button{
+    width: 100%;
+    font-size: 1.5cm;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: purple;
+    background-color: grey;
+}
+.keypad{
+    height: 450px;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 16.95cm;
+}
+.container{
+    text-align: center;
+}
+
+.hover{
+    background-color: red;
+    color: black;
+    
+}
+
+.operators{
+    border-radius: 50%;
+}
+
+.screen{
+    padding: 1cm 1cm;
+    margin-bottom: 0cm;
+    margin-top: 1cm;
+}
+
+#reset{
+    margin-right: 15cm;
+    font-weight: bolder;
+}
+
+footer{
+margin-left: 34cm;
+position: absolute;
+background-color: white;
+font-weight: bolder;
+}
