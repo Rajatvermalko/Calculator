@@ -21,8 +21,8 @@ h3{
     margin-top: 0.1cm;
     margin-bottom: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 0.2cm;
-    text-decoration: underline double 0.05cm blue;
+    letter-spacing: 2px;
+    text-decoration: underline double 5px darkolivegreen;
 }
 
 #clear{
@@ -48,6 +48,17 @@ button{
     color: purple;
     background-color: grey;
 }
+#refr{
+    background-color: black;
+    color: blueviolet;
+}
+
+#refr:hover{
+    background-color: purple;
+    transform: scale(1.08);
+    color: black;   
+}
+
 .keypad{
     height: 450px;
     width: 240px;
@@ -83,7 +94,16 @@ button:hover{
 #reset{
     margin-right: 15cm;
     font-weight: bolder;
+    background-color: black;
+    color: blueviolet;
 }
+
+#reset:hover{
+    background-color: purple;
+    transform: scale(1.08);
+    color: black;   
+}
+
 
 footer{
 float: right;

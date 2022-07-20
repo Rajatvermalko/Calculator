@@ -1,15 +1,32 @@
-$(function(){
+let num={0,0};
+
+$(function()
+{
     var display = $('#screen');
     display.val(0);
+    let flag=0;
 
-    $('click', 'button.num', function(){
-        if(display.val() != 0) {
+    $('button').click(function inputData()
+    {
+        if(display.val() != 0)
+        {
             display.val(display.val() + $(this).val());
-        } else {
+        }
+        else
+        {
             display.val($(this).val());
         }
+        num[flag] = $(this).val();
 
-    });
-});
+        if(!(Number.isInteger(display.val())))
+        {
+        
+        
+        }
+}
+);
+    
+    }
+    );
 
-$("#clear").val(-1);
+$("#clear").click(reset());
