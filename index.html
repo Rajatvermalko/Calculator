@@ -5,46 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" src="public/css/styles.css">
-    <link rel="icon" href="images/calculator.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="public/images/calculator.png">
 </head>
 <body>
 <h3>Simple</h3>
 <h1>CALCULATOR</h1>
 <div class="container">
 <div class="answer">
-   <input class="screen" type="text">
+   <input id="screen" type="text" row="5" col="10">
 </div class="container py-5 text-center">
 <div>
 <table class="keypad link pop-on-hover">
     <tr>
-        <td><button class="num">1</button></td>
-        <td><button class="num">2</button></td>
-        <td><button class="num">3</button></td>
+        <td><button class="num" value="1">1</button></td>
+        <td><button class="num" value="2">2</button></td>
+        <td><button class="num" value="3">3</button></td>
         <td><button id="clear">C</button></td>
     </tr>
     <tr>
-        <td><button class="num">4</button></td>
-        <td><button class="num">5</button></td>
-        <td><button class="num">6</button></td>
-        <td><button class="operators">+</button></td>
+        <td><button class="num" value="4">4</button></td>
+        <td><button class="num" value="5">5</button></td>
+        <td><button class="num" value="6">6</button></td>
+        <td><button class="operators" value="+">+</button></td>
         
     </tr>
     <tr>
-        <td><button class="num">7</button></td>
-        <td><button class="num">8</button></td>
-        <td><button class="num">9</button></td>
-        <td><button class="operators">-</button></td>
+        <td><button class="num" value="7">7</button></td>
+        <td><button class="num" value="8">8</button></td>
+        <td><button class="num" value="9">9</button></td>
+        <td><button class="operators" value="-">-</button></td>
         
     </tr>
     <tr class="lastline">
         <td><button>0</button></td>
-        <td><button class="operators">**</button></td>
-        <td><button class="operators">/</button></td>
-        <td><button class="operators">*</button></td>
+        <td><button class="operators" value="/">/</button></td>
+        <td><button class="operators" value="*">X</button></td>
+        <td><button class="operators" id="pow" value="**">**</button></td>
     </tr>
     <tr>
-        <td colspan="4"><button class="equalto">=</button></td>
+        <td colspan="4"><button class="equalto" value="=">=</button></td>
     </tr>
 
 
@@ -55,6 +55,7 @@
 <footer>
      © Rajat Verma | <a href="https://rajatvermalko.netlify.app/">Portfolio-WEBSITE</a>
 </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script type="module" src="Calc.js"></script>
 </body>
 </html>

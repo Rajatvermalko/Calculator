@@ -1,13 +1,14 @@
 body{
-    background-color:black;
-    background-image: url("images/schoolbag.jpg");
+    background-color:grey;
+    background-image: url("public/images/schoolbag.jpg");
     background-attachment: fixed;
+    background-attachment: no-repeat;
 }
 
 h3{
     text-align: center;
-    color: white;
-    margin: 0.5cm 0 0.1cm 0;
+    color:brown;
+    margin: 0.2cm 0 0.1cm 0;
     font-family: cursive;
     letter-spacing: 0.1cm;
     text-decoration: wavy;
@@ -16,19 +17,28 @@ h3{
  h1{
     text-align: center;
     font-weight: bolder;
-    color: white;
+    color: purple;
     margin-top: 0.1cm;
     margin-bottom: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.2cm;
-    text-decoration: underline double 0.05cm purple;
+    text-decoration: underline double 0.05cm blue;
 }
 
 #clear{
     color: red;
     background-color: aquamarine;
 }
-
+#clear:hover{
+    background-color: red;
+    transform: scale(1.08);
+    color: aquamarine;
+    
+}
+table{
+    display: table;
+    table-layout: fixed;
+}
 button{
     width: 100%;
     font-size: 1.5cm;
@@ -48,8 +58,9 @@ button{
     text-align: center;
 }
 
-.hover{
-    background-color: red;
+button:hover{
+    background-color: purple;
+    transform: scale(1.08);
     color: black;
     
 }
@@ -58,10 +69,15 @@ button{
     border-radius: 50%;
 }
 
-.screen{
-    padding: 1cm 1cm;
-    margin-bottom: 0cm;
-    margin-top: 1cm;
+#screen{
+    padding: 40px 40px;
+    margin-top: 30px;
+    background-color: lightblue;
+    border: 10px;
+    border-color: black;
+}
+#pow{
+    font-size:1.3cm;
 }
 
 #reset{
@@ -70,8 +86,7 @@ button{
 }
 
 footer{
-margin-left: 34cm;
-position: absolute;
+float: right;
 background-color: white;
 font-weight: bolder;
 }
