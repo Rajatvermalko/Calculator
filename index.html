@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" src="public/css/styles.css">
     <link rel="icon" href="images/calculator.png">
 </head>
 <body>
@@ -18,22 +18,22 @@
 <div>
 <table class="keypad link pop-on-hover">
     <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
+        <td><button class="num">1</button></td>
+        <td><button class="num">2</button></td>
+        <td><button class="num">3</button></td>
         <td><button id="clear">C</button></td>
     </tr>
     <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
+        <td><button class="num">4</button></td>
+        <td><button class="num">5</button></td>
+        <td><button class="num">6</button></td>
         <td><button class="operators">+</button></td>
         
     </tr>
     <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
+        <td><button class="num">7</button></td>
+        <td><button class="num">8</button></td>
+        <td><button class="num">9</button></td>
         <td><button class="operators">-</button></td>
         
     </tr>
@@ -44,7 +44,7 @@
         <td><button class="operators">*</button></td>
     </tr>
     <tr>
-        <td colspan="4"><button>=</button></td>
+        <td colspan="4"><button class="equalto">=</button></td>
     </tr>
 
 
@@ -55,7 +55,6 @@
 <footer>
      © Rajat Verma | <a href="https://rajatvermalko.netlify.app/">WEBSITE</a>
 </footer>
-    <script src="https://ajax.googleapis.com/ajax/tdbs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="Calc.js"></script>
+    <script type="module" src="Calc.js"></script>
 </body>
 </html>

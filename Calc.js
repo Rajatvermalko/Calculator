@@ -1,19 +1,29 @@
-// jshint esversion:6
+//jshint esversion:6
 
-
-const express = require ("express");
-const https = require ("https");
-const bodyParser = require("body-parser");
+var express = require ('express');
+var path = require ('path');
+var bodyParser = require('body-parser');
 var stdin=process.openStdin();
 
-const port=process.env.port || 3000
+const port=process.env.port || 3000;
 const app = express();
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(express.static(__dirname + '/public'));
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get("/",(req, res) => {
-        res.sendFile(__dirname +"/index.html");
+    res.sendFile(__dirname +"index.html");
+    res.sendFile(__dirname+ "public/css/styles.css");
+        
+document.getElementsByTagName("button");
+
+
+
+
+
+
 });
 
 app.post("/", function(request,response){
@@ -26,9 +36,6 @@ app.post("/", function(request,response){
 
 
 
-
-
-
-    app.listen(port,() => {
+app.listen(port,() => {
         console.log("Server 3000 has started");
     });
