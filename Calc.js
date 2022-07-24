@@ -11,7 +11,6 @@ $(function () {
         // n=$(this).val();
         // temp= display.val((display.val()*10)+ n);
         //     }
-
         //     else{
         //         num[flag]=temp;
         //         flag+=1;
