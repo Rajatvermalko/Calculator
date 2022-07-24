@@ -16,10 +16,13 @@ $(function () {
         //         flag+=1;
         //         op[op2]=$(this).val();
         //     }
-        if ((Number.isInteger(display.val()))) {
+        if ((Number.isInteger(display.val())))
+         {
             display.val((display.val() * 10) + $(this).val());
             display.val($(this).val()); //display finalized value 
-        } else {
+        } 
+        else
+         {
             op[flag] = ($(this).val()); //operator input
             num[flag] = display.val($(this).val()); //take num out for calculattions
         }
